@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Narsinghpur & Jabalpur - Mystical Heart of Madhya Pradesh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .hero-slider {
+            height: 80vh;
+            width: 100%;
+        }
+        
+        .hero-slide {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .destination-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            height: 100%;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background-color: #10B981 !important;
+        }
+        
+        .swiper-button-next, .swiper-button-prev {
+            color: #10B981 !important;
+        }
+        
+        .booking-form input, .booking-form select, .booking-form textarea, .contact-form input, .contact-form textarea {
+            border: 1px solid #e2e8f0;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        .booking-form select {
+            background-color: white;
+        }
+        
+        #navbarMenu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* Fading in animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Custom accordion styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-active .accordion-content {
+            max-height: 500px;
+        }
+        
+        .accordion-header::after {
+            content: '+';
+            float: right;
+            transform: scale(1.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-active .accordion-header::after {
+            content: '−';
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow fixed w-full z-50">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-green-500">
+                        <span class="text-emerald-600">Heart</span>Land Tours
+                    </h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-green-500 font-medium">Home</a>
+                    <a href="#destinations" class="text-gray-800 hover:text-green-500 font-medium">Destinations</a>
+                    <a href="#packages" class="text-gray-800 hover:text-green-500 font-medium">Packages</a>
+                    <a href="#accommodations" class="text-gray-800 hover:text-green-500 font-medium">Stay</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-green-500 font-medium">Gallery</a>
+                    <a href="#contact" class="text-gray-800 hover:text-green-500 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="navbarMenu" class="md:hidden bg-white absolute left-0 w-full py-2 px-4 mt-2 rounded-b-lg shadow-lg hidden">
+                <a href="#home" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Home</a>
+                <a href="#destinations" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Destinations</a>
+                <a href="#packages" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Packages</a>
+                <a href="#accommodations" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Stay</a>
+                <a href="#gallery" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Gallery</a>
+                <a href="#contact" class="block py-2 text-gray-800 hover:text-green-500 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/62/Marble_Rocks_-_Jabalpur.jpg');">
+                    <div class="hero-overlay flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Discover the Marble Wonder</h1>
+                            <p class="text-xl md:text-2xl text-white mb-8">Experience the majestic Marble Rocks of Bhedaghat</p>
+                            <a href="#destinations" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Dhuandhar_Waterfalls_in_Bhedaghat%2C_India.jpg');">
+                    <div class="hero-overlay flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Witness Nature's Power</h1>
+                            <p class="text-xl md:text-2xl text-white mb-8">Feel the mist of the magnificent Dhuandhar Falls</p>
+                            <a href="#destinations" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('https://cdn.s3waas.gov.in/s366f041e16a60928b05a7e228a89c3799/uploads/bfi_thumb/2019061247-olw917r3n87d840yp5s3ulrbm16o00opo2qji7p6ms.jpg');">
+                    <div class="hero-overlay flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Spiritual Awakening</h1>
+                            <p class="text-xl md:text-2xl text-white mb-8">Explore the sacred temples of Narsinghpur</p>
+                            <a href="#destinations" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to the Heart of Madhya Pradesh</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">Discover the enchanting regions of Narsinghpur and Jabalpur, where natural wonders, spirituality, and culture blend to create unforgettable experiences. From the magnificent Marble Rocks to spiritual sanctuaries, these hidden gems offer a perfect escape from the hustle of everyday life.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mountain text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Natural Wonders</h3>
+                    <p class="text-gray-600">Experience breathtaking landscapes, from marble formations to thundering waterfalls.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-pray text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Spiritual Journeys</h3>
+                    <p class="text-gray-600">Visit ancient temples and meditation centers that offer peace and enlightenment.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Culinary Delights</h3>
+                    <p class="text-gray-600">Savor local cuisine and delicacies that tantalize your taste buds.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hotel text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Comfortable Stays</h3>
+                    <p class="text-gray-600">Relax in comfortable accommodations ranging from luxury to budget options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore Popular Destinations</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover breathtaking natural wonders and cultural landmarks across Jabalpur and Narsinghpur regions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bhedaghat Marble Rocks -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.trawell.in/admin/images/upload/433308479Jabalpur_Marble_Rocks.jpg" alt="Bhedaghat Marble Rocks" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Bhedaghat Marble Rocks</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Jabalpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Magnificent marble cliffs along the Narmada River that rise up to 100 feet, creating a spectacular gorge. Take a boat ride through this natural wonder to witness its changing colors.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.6 (692 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Bhedaghat is the only place in Narmada river's course of about 1312kms where the river falls into a 30-meter deep gorge and flows between marble rocks. These marble rocks appear in different colors as sunlight reflects at different angles. The most magical time to visit is during full moon nights when the marbles glow in the moonlight. The boat ride costs approximately ₹100 per person and lasts for 30-40 minutes.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">October to March is ideal when the weather is pleasant.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Timings:</h4>
+                                <p class="text-gray-600">Boat rides available from 6 AM to 8:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dhuandhar Falls -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Dhuandhar_Waterfalls_in_Bhedaghat%2C_India.jpg" alt="Dhuandhar Falls" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Dhuandhar Falls</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Jabalpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A spectacular waterfall where the Narmada River narrows down and plunges into a gorge, creating a misty atmosphere that gives it the name "Dhuandhar" meaning "smoke cascade".</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.5 (763 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Dhuandhar Falls is located about 25 km from Jabalpur railway station. The waterfall drops from a height of 10 meters, creating a cloudy appearance as water particles rise up like smoke. There's a cable car ride available that offers a panoramic view of the falls and the surrounding area. The area around the falls has been developed with viewing platforms, gardens, and souvenir shops.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">Monsoon season (July to September) when the waterfall is at its fullest.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Entry Fee:</h4>
+                                <p class="text-gray-600">The viewing area charges a nominal fee. Cable car rides are priced separately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jhoteshwar Temple -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://cdn.s3waas.gov.in/s366f041e16a60928b05a7e228a89c3799/uploads/bfi_thumb/2019061247-olw917r3n87d840yp5s3ulrbm16o00opo2qji7p6ms.jpg" alt="Jhoteshwar Temple" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Jhoteshwar Temple</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Narsinghpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A sacred and gorgeous temple dedicated to Raj-Rajeshwari Tripur Sundari goddess, offering spiritual solace amidst natural surroundings.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.5 (982 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Jhoteshwar Temple is located in Shyamnagar, Madhya Pradesh. The temple complex includes the main Tripur Sundari temple, Lodheshwar temple, and Hanuman tekari. Visitors can also find natural rock formations and a Shivling. The temple is situated in a serene environment, making it perfect for meditation and spiritual contemplation.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">Year-round, but especially during Hindu festivals.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Timings:</h4>
+                                <p class="text-gray-600">Opens early morning and closes at 9 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Osho Ashram -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://i.ytimg.com/vi/ccNK_wjzgpg/maxresdefault.jpg" alt="Osho Ashram" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Osho Ashram</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Narsinghpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A place of historical significance where Osho used to meditate from the age of 14, offering a serene environment for meditation and self-discovery.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.2 (11 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Osho Ashram is located in Gadarwara town on the banks of the Shakkar River in Narsinghpur district. This is where Osho (Bhagwan Shree Rajneesh) used to come and meditate from his early years. The ashram is surrounded by lush greenery, creating an ideal atmosphere for meditation. Visitors can participate in meditation sessions and learn about Osho's teachings.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">Throughout the year, especially during meditation retreats.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Activities:</h4>
+                                <p class="text-gray-600">Meditation, yoga, and spiritual discussions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chausath Yogini Temple -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.mptourism.com/web/image/catalog/2024/Destination/chausath%20yogini%20temple-2.jpg" alt="Chausath Yogini Temple" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Chausath Yogini Temple</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Jabalpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">An ancient temple dedicated to the 64 Yoginis, built on a hilltop near Bhedaghat offering panoramic views of the Narmada River and surrounding landscapes.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.3 (157 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Chausath Yogini Temple is one of the oldest heritage sites in Jabalpur, dating back to the 10th century. The temple is circular in shape and contains 64 small chambers, each dedicated to a different Yogini. Built on a rocky hilltop, the temple requires climbing about 150 steps. The architectural style is unique and the temple offers a spectacular view of the Narmada River and marble cliffs.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">Early morning or late afternoon to avoid the heat and catch beautiful views.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Historical Significance:</h4>
+                                <p class="text-gray-600">One of only four Yogini temples preserved in India today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Madan Mahal Fort -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://static.toiimg.com/photo/58759256.cms" alt="Madan Mahal Fort" class="w-full">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Madan Mahal Fort</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Jabalpur</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A historical fort perched on a hilltop offering panoramic views of Jabalpur city. Built by the Gond ruler Raja Madan Shah in the 11th century.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-gray-600">4.1 (420 reviews)</span>
+                            </div>
+                            <button class="accordion-toggle text-green-500 hover:text-green-700 font-medium">Read More</button>
+                        </div>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600">Madan Mahal Fort is situated on a rocky hill at an elevation of about 500 meters. While much of the fort is in ruins now, its strategic location and historical significance make it a must-visit. Near the fort is the famous Balancing Rock, a geological wonder where a huge boulder is balanced naturally on another rock. The fort provides a breathtaking view of the entire city and surrounding landscapes.</p>
+                            <div class="mt-4">
+                                <h4 class="font-semibold">Best Time to Visit:</h4>
+                                <p class="text-gray-600">Early morning or evening for better views and comfortable weather.</p>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class="font-semibold">Entry Fee:</h4>
+                                <p class="text-gray-600">Free of charge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section id="packages" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Popular Tour Packages</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Choose from our carefully crafted tour packages designed to give you the best experience of Narsinghpur and Jabalpur regions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Weekend Escape Package -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Marble_Rocks_-_Jabalpur.jpg" alt="Weekend Escape Package" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">POPULAR</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Weekend Escape</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-clock text-gray-500 mr-2"></i>
+                            <span>2 Days / 1 Night</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 line-through">₹5,999</p>
+                                <p class="text-2xl font-bold text-green-600">₹4,999</p>
+                                <p class="text-sm text-gray-500">per person</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="font-semibold mb-2">Highlights:</h4>
+                        <ul class="text-gray-600 mb-6">
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Boat ride through Marble Rocks</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Visit to Dhuandhar Falls</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Comfortable accommodation</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>All meals included</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Family Adventure Package -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://static.toiimg.com/photo/59595258/.jpg" alt="Family Adventure Package" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">BEST VALUE</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Family Adventure</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-clock text-gray-500 mr-2"></i>
+                            <span>3 Days / 2 Nights</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 line-through">₹8,999</p>
+                                <p class="text-2xl font-bold text-green-600">₹7,499</p>
+                                <p class="text-sm text-gray-500">per person</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="font-semibold mb-2">Highlights:</h4>
+                        <ul class="text-gray-600 mb-6">
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Explore all major attractions</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Cable car ride at Dhuandhar Falls</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Visit to Madan Mahal Fort</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Family-friendly activities</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Luxury accommodation with all meals</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Spiritual Journey Package -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://cdn.s3waas.gov.in/s366f041e16a60928b05a7e228a89c3799/uploads/bfi_thumb/2019061247-olw917r3n87d840yp5s3ulrbm16o00opo2qji7p6ms.jpg" alt="Spiritual Journey Package" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Spiritual Journey</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-clock text-gray-500 mr-2"></i>
+                            <span>4 Days / 3 Nights</span>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <div>
+                                <p class="text-gray-500 line-through">₹10,999</p>
+                                <p class="text-2xl font-bold text-green-600">₹8,999</p>
+                                <p class="text-sm text-gray-500">per person</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="font-semibold mb-2">Highlights:</h4>
+                        <ul class="text-gray-600 mb-6">
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Visit to all major temples</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Meditation session at Osho Ashram</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Spiritual discourses by local experts</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Visit to Jhoteshwar Temple</span>
+                            </li>
+                            <li class="flex items-start mb-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Comfortable stay with vegetarian meals</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Book Your Tour</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Fill out the form below to reserve your spot on one of our amazing tours. We'll get back to you within 24 hours to confirm your booking.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <form class="booking-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                    <input type="text" id="name" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                    <input type="email" id="email" placeholder="john@example.com" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                                </div>
+                                <div>
+                                    <label for="package" class="block text-gray-700 font-medium mb-2">Select Package</label>
+                                    <select id="package" required>
+                                        <option value="">Choose a package</option>
+                                        <option value="weekend-escape">Weekend Escape</option>
+                                        <option value="family-adventure">Family Adventure</option>
+                                        <option value="spiritual-journey">Spiritual Journey</option>
+                                        <option value="custom">Custom Package</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="date" class="block text-gray-700 font-medium mb-2">Travel Date</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div>
+                                    <label for="guests" class="block text-gray-700 font-medium mb-2">Number of Guests</label>
+                                    <input type="number" id="guests" min="1" max="20" placeholder="2" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <label for="special-requests" class="block text-gray-700 font-medium mb-2">Special Requests</label>
+                                <textarea id="special-requests" rows="4" placeholder="Any special requirements or questions?"></textarea>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg w-full transition duration-300">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section id="accommodations" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Where to Stay</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">From luxury resorts to budget-friendly hotels, we offer a range of accommodation options to suit your preferences and budget.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MPT Marble Rocks -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/e0/f7/b2/mpt-marble-rocks.jpg" alt="MPT Marble Rocks" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">MPT Marble Rocks</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                            <span class="text-gray-600">Bhedaghat, Jabalpur</span>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-green-600 font-semibold">₹3,500</span>
+                            <span class="text-gray-600"> / night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Enjoy stunning views of the Marble Rocks from this government-run hotel. Perfect location for exploring Bhedaghat and Dhuandhar Falls.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Free WiFi</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-parking text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Parking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-utensils text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Restaurant</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-swimming-pool text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Garden</span>
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Narmada Jacksons Hotel -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/d8/85/b7/narmada-jacksons-hotel.jpg?w=700&h=-1&s=1" alt="Narmada Jacksons Hotel" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Narmada Jacksons</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                            <span class="text-gray-600">Civil Lines, Jabalpur</span>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-green-600 font-semibold">₹4,800</span>
+                            <span class="text-gray-600"> / night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A luxury hotel in the heart of Jabalpur city offering modern amenities, excellent dining options, and easy access to tourist attractions.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Free WiFi</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-parking text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Parking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-swimming-pool text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Swimming Pool</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-spa text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Spa</span>
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Narsinghpur Guest House -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://static.toiimg.com/photo/msid-68493851/68493851.jpg" alt="Narsinghpur Guest House" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Narsinghpur Guest House</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                            <span class="text-gray-600">Main Road, Narsinghpur</span>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-green-600 font-semibold">₹1,800</span>
+                            <span class="text-gray-600"> / night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A comfortable budget-friendly accommodation in Narsinghpur, offering clean rooms and basic amenities for travelers exploring the region.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Free WiFi</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-parking text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Parking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-utensils text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">Restaurant</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-air-conditioner text-gray-500 mr-2"></i>
+                                <span class="text-gray-600">AC Rooms</span>
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Travel Tips</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Essential information to help you plan your perfect trip to Narsinghpur and Jabalpur regions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Best Time to Visit</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-sun text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">October to March</h4>
+                                <p class="text-gray-600">Winter season offers pleasant weather with temperatures ranging from 10°C to 25°C, making it the best time for sightseeing and outdoor activities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-cloud-rain text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">July to September</h4>
+                                <p class="text-gray-600">Monsoon season is ideal for seeing the waterfalls in their full glory, but some activities might be restricted due to heavy rainfall.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-thermometer-full text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">April to June</h4>
+                                <p class="text-gray-600">Summer can be hot with temperatures reaching up to 45°C. Early morning and evening visits are recommended during this season.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">How to Reach</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-plane text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">By Air</h4>
+                                <p class="text-gray-600">The nearest airport is Jabalpur Airport (JLR), which is well-connected to major cities like Delhi, Mumbai, and Hyderabad. From the airport, you can hire a taxi to reach your destination.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-train text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">By Train</h4>
+                                <p class="text-gray-600">Jabalpur Junction is a major railway station with good connectivity to all parts of India. Narsinghpur also has a railway station with limited train services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-bus text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">By Road</h4>
+                                <p class="text-gray-600">Both Jabalpur and Narsinghpur are well-connected by roads. Regular buses operate from nearby cities, and the roads are in good condition for private vehicles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Local Transportation</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-taxi text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Taxis and Auto Rickshaws</h4>
+                                <p class="text-gray-600">Available throughout both cities. Auto-rickshaws are economical for short distances, while taxis can be hired for full-day sightseeing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-bus-alt text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Local Buses</h4>
+                                <p class="text-gray-600">Public buses connect various parts of the cities and surrounding areas. They are budget-friendly but might be crowded during peak hours.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-car text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Rental Services</h4>
+                                <p class="text-gray-600">Car rental services are available in Jabalpur, which is convenient for exploring multiple destinations at your own pace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">What to Pack</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-tshirt text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Clothing</h4>
+                                <p class="text-gray-600">Light cotton clothes for summer, warm clothing for winter, and a light jacket for evenings. Comfortable walking shoes are essential for exploring.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-camera text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Photography</h4>
+                                <p class="text-gray-600">Camera with extra batteries and memory cards. The natural landscapes and architectural marvels offer excellent photo opportunities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-first-aid text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Essentials</h4>
+                                <p class="text-gray-600">Sunscreen, insect repellent, personal medication, and a basic first-aid kit. Carrying a water bottle and some snacks is recommended for day trips.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Gallery</h2>
+                <div class="w-20 h-1 bg-green-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Feast your eyes on the breathtaking beauty of Narsinghpur and Jabalpur through our carefully curated photo gallery.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Marble_Rocks_-_Jabalpur.jpg" alt="Marble Rocks" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Dhuandhar_Waterfalls_in_Bhedaghat%2C_India.jpg" alt="Dhuandhar Falls" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.s3waas.gov.in/s366f041e16a60928b05a7e228a89c3799/uploads/bfi_thumb/2019061247-olw917r3n87d840yp5s3ulrbm16o00opo2qji7p6ms.jpg" alt="Jhoteshwar Temple" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ytimg.com/vi/ccNK_wjzgpg/maxresdefault.jpg" alt="Osho Ashram" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.mptourism.com/web/image/catalog/2024/Destination/chausath%20yogini%20temple-2.jpg" alt="Chausath Yogini Temple" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://static.toiimg.com/photo/58759256.cms" alt="Madan Mahal Fort" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.trawell.in/admin/images/upload/433308479Jabalpur_Marble_Rocks.jpg" alt="Boat Ride in Bhedaghat" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i0.wp.com/lifeisavacation.in/wp-content/uploads/2013/08/dhuandhar.jpg" alt="Dhuandhar Falls View" class="w-full h-56 object-cover rounded-lg shadow-md">
+                </div>
+                <div>
+                    <!-- Google Map Embed -->
+  <section class="py-10 bg-white">
+    <h2 class="text-2xl font-bold text-center mb-6">Our Locations</h2>
+    <div class="flex justify-center">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.908321885321!2d79.1855150149818!3d22.31216338531233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3982281cbf5cbcb3%3A0x24d2bd41d92ddbd3!2sNarsinghpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1644505625890!5m2!1sen!2sin"
+        width="500%" height="500" style="border: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div> 
+
